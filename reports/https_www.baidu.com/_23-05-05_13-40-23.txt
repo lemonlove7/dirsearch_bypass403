@@ -1,0 +1,109 @@
+# Dirsearch started Fri May  5 13:45:11 2023 as: dirsearch.py -u https://www.baidu.com -b yes
+
+301   232B   https://www.baidu.com/js    -> REDIRECTS TO: http://www.baidu.com/js/
+302   222B   https://www.baidu.com/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+302   231B   https://www.baidu.com/.ht_wsr.txt    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.hta    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess-dev    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess-local    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess.orig    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess-marco    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess.BAK    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess_extra    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess.bak    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess.sample    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess.save    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess.inc    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccessOLD    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess_orig    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess_sc    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess.old    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccessBAK    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess~    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess.bak1    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htgroup    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccessOLD2    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htm    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htaccess.txt    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htpasswd-old    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htpasswd.bak    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.html    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htpasswd    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htpasswd_test    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htusers    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htpasswd/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htpasswds    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.htpasswd.inc    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/.httr-oauth    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+301   234B   https://www.baidu.com/2002    -> REDIRECTS TO: http://www.baidu.com/2002/
+301   234B   https://www.baidu.com/2005    -> REDIRECTS TO: http://www.baidu.com/2005/
+301   234B   https://www.baidu.com/2004    -> REDIRECTS TO: http://www.baidu.com/2004/
+301   234B   https://www.baidu.com/2006    -> REDIRECTS TO: http://www.baidu.com/2006/
+301   234B   https://www.baidu.com/2008    -> REDIRECTS TO: http://www.baidu.com/2008/
+301   234B   https://www.baidu.com/2009    -> REDIRECTS TO: http://www.baidu.com/2009/
+301   234B   https://www.baidu.com/2007    -> REDIRECTS TO: http://www.baidu.com/2007/
+301   233B   https://www.baidu.com/app    -> REDIRECTS TO: http://www.baidu.com/app/
+302   231B   https://www.baidu.com/app/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/app/.htaccess    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   208B   https://www.baidu.com/c    -> REDIRECTS TO: http://cache.baidu.com/c
+301   235B   https://www.baidu.com/cache    -> REDIRECTS TO: http://www.baidu.com/cache/
+302   231B   https://www.baidu.com/cert/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   222B   https://www.baidu.com/cgi-bin/.%2e/%2e%2e/%2e%2e/%2e%2e/etc/passwd    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+200     3KB  https://www.baidu.com/cache/
+301   233B   https://www.baidu.com/css    -> REDIRECTS TO: http://www.baidu.com/css/
+200   159B   https://www.baidu.com/crossdomain.xml
+200     4KB  https://www.baidu.com/default.html
+302   208B   https://www.baidu.com/f    -> REDIRECTS TO: http://flash.baidu.com/f
+200     2KB  https://www.baidu.com/favicon.ico
+200     5KB  https://www.baidu.com/error.html
+301   234B   https://www.baidu.com/help    -> REDIRECTS TO: http://www.baidu.com/help/
+302     0B   https://www.baidu.com/history    -> REDIRECTS TO: https://www.baidu.com/error.html
+302     0B   https://www.baidu.com/helpadmin    -> REDIRECTS TO: https://www.baidu.com/error.html
+302     0B   https://www.baidu.com/home.aspx    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+404   571B   https://www.baidu.com/home.php
+302     0B   https://www.baidu.com/home.js    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+301   238B   https://www.baidu.com/homepage    -> REDIRECTS TO: http://www.baidu.com/homepage/
+302     0B   https://www.baidu.com/home.zip    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+302     0B   https://www.baidu.com/home.tar.gz    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+302     0B   https://www.baidu.com/home.tar    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+302   231B   https://www.baidu.com/help/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302     0B   https://www.baidu.com/home.tar.bz2    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+302     0B   https://www.baidu.com/home.rar    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+302     0B   https://www.baidu.com/home.jsp    -> REDIRECTS TO: https://www.baidu.com/search/error.html
+200   561B   https://www.baidu.com/home.html
+302   208B   https://www.baidu.com/i    -> REDIRECTS TO: http://image.baidu.com/i
+301   236B   https://www.baidu.com/images    -> REDIRECTS TO: http://www.baidu.com/images/
+301   233B   https://www.baidu.com/img    -> REDIRECTS TO: http://www.baidu.com/img/
+302   231B   https://www.baidu.com/images/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/index.php/login/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   231B   https://www.baidu.com/js/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+302   206B   https://www.baidu.com/m    -> REDIRECTS TO: http://mp3.baidu.com/m
+301   234B   https://www.baidu.com/more    -> REDIRECTS TO: http://www.baidu.com/more/
+302    59B   https://www.baidu.com/p/m/a/    -> REDIRECTS TO: https://passport.baidu.com?from=prin
+302    59B   https://www.baidu.com/p/    -> REDIRECTS TO: https://passport.baidu.com?from=prin
+301   233B   https://www.baidu.com/pub    -> REDIRECTS TO: http://www.baidu.com/pub/
+302   464B   https://www.baidu.com/s    -> REDIRECTS TO: https://wappass.baidu.com/static/captcha/tuxing.html?&logid=10948638565866482982&ak=c27bbc89afca0463650ac9bde68ebe06&backurl=https%3A%2F%2Fwww.baidu.com%2Fs&ext=x9G9QDmMXq%2FNo87gjGO0P8VS%2F0JXPNHNnGalfA11bOemz3O%2FBOxvuSFwUtB1f0Rqg1T9i%2F9aWxTqDk%2BHyX%2BPs0ChrtIMtQkyMCB6zc%2FRMjid5iRu%2BvDGTxi%2F3OX8v96DL4YLBcZA2VnmXDoB42J5FqgNjaVYFxC53U6q5godYvQ%3D&signature=4b454365050d7240d7a84e1d5afc0306&timestamp=1683265423
+301   236B   https://www.baidu.com/schema    -> REDIRECTS TO: http://www.baidu.com/schema/
+301   236B   https://www.baidu.com/search    -> REDIRECTS TO: http://www.baidu.com/search/
+302   231B   https://www.baidu.com/sdk/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+301   234B   https://www.baidu.com/site    -> REDIRECTS TO: http://www.baidu.com/site/
+200    94B   https://www.baidu.com/site/
+200   150KB  https://www.baidu.com/home
+302   231B   https://www.baidu.com/spec/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+200   232B   https://www.baidu.com/robots.txt
+302   231B   https://www.baidu.com/stat/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+301   236B   https://www.baidu.com/static    -> REDIRECTS TO: http://www.baidu.com/static/
+301   233B   https://www.baidu.com/swf    -> REDIRECTS TO: http://www.baidu.com/swf/
+301   238B   https://www.baidu.com/template    -> REDIRECTS TO: http://www.baidu.com/template/
+302   231B   https://www.baidu.com/template/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+301   234B   https://www.baidu.com/user    -> REDIRECTS TO: http://www.baidu.com/user/
+302   231B   https://www.baidu.com/user/    -> REDIRECTS TO: http://www.baidu.com/forbiddenip/forbidden.html
+404   564B   https://www.baidu.com/video.php
+404   564B   https://www.baidu.com/video.js
+404   564B   https://www.baidu.com/video.jsp
+404   564B   https://www.baidu.com/video.aspx
+404   564B   https://www.baidu.com/video-js.swf
+302   154B   https://www.baidu.com/video.html    -> REDIRECTS TO: https://m.baidu.com/error.jsp?traceid=11087834057479559023235911410
+302   154B   https://www.baidu.com/video    -> REDIRECTS TO: http://m.baidu.com/error.jsp?traceid=10698352292614148588115311410
