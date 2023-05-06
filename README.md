@@ -18,6 +18,9 @@ dirsearch进行目录扫描--->将所有403状态的目录进行保存-->进行4
 python dirsearch.py -u "http://www.xxx.com/" -b yes
 ```
 
+页面长度一样的无效结果进行过滤输出
+
+
 ### 参考优秀项目
 
 dirsearch：https://github.com/maurosoria/dirsearch
