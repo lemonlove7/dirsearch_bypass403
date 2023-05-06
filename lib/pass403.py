@@ -198,7 +198,7 @@ class Query():
 
     def manipulateHeaders(self):
         results = []
-        line_width = 100
+        line_width = 70
 
         for header in self.dirObject.newHeaders:
             r = requests.get(self.url + self.dir, headers=header,verify=False)
