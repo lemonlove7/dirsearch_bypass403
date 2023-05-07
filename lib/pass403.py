@@ -4,7 +4,7 @@ from pyfiglet import Figlet
 from requests.packages import urllib3
 urllib3.disable_warnings()
 
-
+init()
 
 class Arguments():
     def __init__(self, url, urllist, dir, dirlist):
@@ -217,7 +217,7 @@ class Query():
                 print(f"Header= {header}"+'\n',end='')
 
 
-            results.append("\n" + target_address + " " * remaining + info_pure + f"\nHeader= {header}")
+            results.append("\n" + target_address + " " * remaining + info_pure+ f"---Header= {header}")
         self.writeToFile(results)
 
         results_2 = []
@@ -239,7 +239,7 @@ class Query():
 
 
 
-            results_2.append("\n" + target_address + " " * remaining + info_pure + f"\nHeader= {header}")
+            results_2.append("\n" + target_address + " " * remaining + info_pure + f"---Header= {header}")
 
         self.writeToFile(results_2)
 
