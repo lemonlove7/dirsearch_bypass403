@@ -18,7 +18,16 @@ dirsearch进行目录扫描--->将所有403状态的目录进行保存-->进行4
 python dirsearch.py -u "http://www.xxx.com/" -b yes
 ```
 
-页面长度一样的无效结果进行过滤输出
+###使用截图
+
+
+
+### 2023.5.7
+
+增加页面长度一样的无效结果进行过滤输出
+
+<img width="819" alt="image" src="https://user-images.githubusercontent.com/56328995/236655891-cae2798e-1ab6-49b0-b3db-0f59093a10e2.png">
+
 
 
 ### 参考优秀项目
