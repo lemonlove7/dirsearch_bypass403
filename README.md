@@ -18,8 +18,11 @@ dirsearch进行目录扫描--->将所有403状态的目录进行保存-->进行4
 python dirsearch.py -u "http://www.xxx.com/" -b yes
 ```
 
-###使用截图
+### 使用截图
 
+<img width="1151" alt="image" src="https://user-images.githubusercontent.com/56328995/236655975-065acf6a-5fb6-4675-b9e4-fb958773140b.png">
+
+<img width="854" alt="image" src="https://user-images.githubusercontent.com/56328995/236656001-1c2c0589-cbc4-42c4-87f4-6f73a5f95910.png">
 
 
 ### 2023.5.7
