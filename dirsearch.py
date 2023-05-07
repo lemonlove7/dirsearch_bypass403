@@ -18,8 +18,10 @@
 #
 #  Author: Mauro Soria
 
+from colorama import init, Fore, Style
 
 from lib.pass403 import Arguments,Program
+from lib.qc import pass403_qc
 
 
 import threading
@@ -35,6 +37,8 @@ from lib.core.exceptions import FailedDependenciesInstallation
 from lib.core.installation import check_dependencies, install_dependencies
 from lib.core.settings import OPTIONS_FILE
 from lib.parse.config import ConfigParser
+
+init()
 
 if sys.version_info < (3, 7):
     sys.stdout.write("Sorry, dirsearch requires Python 3.7 or higher\n")
@@ -82,31 +86,36 @@ def bypass():
 
 def run_bypass403():
     size = os.path.getsize('403list.txt')
-    if size == 0:
-        print('No 403 status code present!')
-        exit(1)
     from lib.core.options import parse_options
     if (parse_options()['bypass']) == None:
-        exit(1)
-    bp403="".join(parse_options()['bypass'])
-    if bp403 =='yes':
-        print('Start 403bypass!')
-        with open('403list.txt',) as f1:
-            list_403=f1.readlines()
-        for path_403 in list_403:
-            path_403=path_403.replace('\n','').replace('\r','')
-            q.put(path_403)
-        thread_list = []
-        for i in range(20):
-            t = threading.Thread(target=bypass)
-            thread_list.append(t)
-        for t in thread_list:
-            t.setDaemon(True)
-            t.start()
-        for t in thread_list:
-            t.join()
+        pass
     else:
-        exit(1)
+        bp403="".join(parse_options()['bypass'])
+        if bp403 =='yes':
+            if size == 0:
+                print(Fore.GREEN + Style.BRIGHT + 'No 403 status code present!')
+                print(Style.RESET_ALL)
+            else:
+                print(Fore.GREEN + Style.BRIGHT+'Start 403bypass!')
+                print(Style.RESET_ALL)
+                with open('403list.txt',) as f1:
+                    list_403=f1.readlines()
+                #for path_403 in tqdm(list_403, desc='Bypassing 403 errors', unit=' files'):
+                for path_403 in list_403:
+                    path_403=path_403.replace('\n','').replace('\r','')
+                    q.put(path_403)
+                thread_list = []
+                for i in range(20):
+                    t = threading.Thread(target=bypass)
+                    thread_list.append(t)
+                for t in thread_list:
+                    t.setDaemon(True)
+                    t.start()
+                for t in thread_list:
+                    t.join()
+                pass403_qc()
+        else:
+            pass
 
 
 def main():
@@ -119,6 +128,7 @@ def main():
     Controller()
 
     run_bypass403()
+
 
 
 if __name__ == "__main__":
