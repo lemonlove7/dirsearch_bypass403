@@ -41,6 +41,8 @@ python dirsearch.py -u "http://www.xxx.com/" -j yes -b yes
 
 <img width="854" alt="image" src="https://user-images.githubusercontent.com/56328995/236656001-1c2c0589-cbc4-42c4-87f4-6f73a5f95910.png">
 
+<img width="550" alt="image" src="https://user-images.githubusercontent.com/56328995/236990089-dc7994ae-a00c-445b-aaa0-6df54572b821.png">
+
 
 ### 更新日志
 
