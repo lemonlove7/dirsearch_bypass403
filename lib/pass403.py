@@ -166,6 +166,7 @@ class Query():
         if p.status_code !=403:
             print(target_address + " " * remaining + info+'\n',end='')
 
+
         results.append(target_address + " " * remaining + info_pure)
 
         self.writeToFile(results)
@@ -189,6 +190,7 @@ class Query():
             remaining = line_width - len(target_address)
             if r.status_code != 403:
                 print(target_address + " " * remaining + info+'\n',end='')
+
 
 
             results.append(target_address + " " * remaining + info_pure)
