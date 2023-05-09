@@ -1,6 +1,7 @@
 ## dirsearch_bypass403
 
 
+在进行安全测试时，安全测试人员在进行信息收集中时可使用它进行目录枚举发现隐藏目录，绕过403有可能获取管理员权限。不影响dirsearch原本功能使用
 
 ### 运行流程
 
@@ -41,13 +42,15 @@ python dirsearch.py -u "http://www.xxx.com/" -j yes -b yes
 <img width="854" alt="image" src="https://user-images.githubusercontent.com/56328995/236656001-1c2c0589-cbc4-42c4-87f4-6f73a5f95910.png">
 
 
-### 2023.5.7
+### 更新日志
+
+#### 2023.5.7
 
 增加页面长度一样的无效结果进行过滤输出
 
 <img width="819" alt="image" src="https://user-images.githubusercontent.com/56328995/236655891-cae2798e-1ab6-49b0-b3db-0f59093a10e2.png">
 
-### 2023.5.9
+#### 2023.5.9
 
 是否进行jsfind查找js中的url，在网站的js文件中提取URl，排除（如png、gif）的URL，将403状态码的url进行403bypass
 
