@@ -9,10 +9,6 @@ dirsearch进行目录扫描--->将所有403状态的目录进行保存-->是否�
 
 <img width="872" alt="image" src="https://user-images.githubusercontent.com/56328995/236988448-ffc37c6c-3446-4c99-aedf-7e27a08f2dff.png">
 
-### 适用场景
-
-安全测试人员在进行信息收集中时可使用它进行目录枚举发现隐藏目录，绕过403有可能获取管理员权限。
-
 ### 使用说明
 
 默认不启用jsfind和403bypass
