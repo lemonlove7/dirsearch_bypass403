@@ -48,6 +48,14 @@ def parse_arguments():
         help="bypass403(yes/no)",
     )
     mandatory.add_option(
+        "-j",
+        "--jsfind",
+        action="append",
+        dest="jsfind",
+        metavar="",
+        help="jsfind(yes/no)",
+    )
+    mandatory.add_option(
         "-l",
         "--url-file",
         action="store",
