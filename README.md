@@ -31,6 +31,11 @@ python dirsearch.py -u "http://www.xxx.com/" -b yes
 
 <img width="819" alt="image" src="https://user-images.githubusercontent.com/56328995/236655891-cae2798e-1ab6-49b0-b3db-0f59093a10e2.png">
 
+### 2023.5.9
+
+是否进行jsfind查找js中的url，在网站的js文件中提取URl，排除（如png、gif）的URL，将403状态码的url进行403bypass
+
+<img width="779" alt="image" src="https://user-images.githubusercontent.com/56328995/236984950-f704665e-997e-4b0a-bd1c-a35b58cd43e1.png">
 
 
 ### 参考优秀项目
