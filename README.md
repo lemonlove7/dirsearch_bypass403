@@ -6,16 +6,32 @@
 
 dirsearch进行目录扫描--->将所有403状态的目录进行保存-->是否进行jsfind-->是(进行js爬取url和域名，将爬取到的url进行状态码识别如果是403状态则进行保存)-->进行403绕过
 
+<img width="872" alt="image" src="https://user-images.githubusercontent.com/56328995/236988448-ffc37c6c-3446-4c99-aedf-7e27a08f2dff.png">
+
 ### 适用场景
 
 安全测试人员在进行信息收集中时可使用它进行目录枚举发现隐藏目录，绕过403有可能获取管理员权限。
 
 ### 使用说明
 
-默认不启用 参数 -b yes 启动403bypass
+默认不启用jsfind和403bypass
+
+403bypass : -b yes
 
 ```
 python dirsearch.py -u "http://www.xxx.com/" -b yes
+```
+
+jsfind ：-j yes
+
+```
+python dirsearch.py -u "http://www.xxx.com/" -j yes
+```
+
+jsfind和403bypass ： -b yes -j yes
+
+```
+python dirsearch.py -u "http://www.xxx.com/" -j yes -b yes
 ```
 
 ### 使用截图
