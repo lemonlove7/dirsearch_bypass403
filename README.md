@@ -31,6 +31,12 @@ jsfind和403bypass ： -b yes -j yes
 python dirsearch.py -u "http://www.xxx.com/" -j yes -b yes
 ```
 
+单独对指定目录进行bypass
+
+```
+python single_403pass.py -u "http://www.xxx.com/" -p "/index.php" # -p 指定路径
+```
+
 ### 使用截图
 
 <img width="1151" alt="image" src="https://user-images.githubusercontent.com/56328995/236655975-065acf6a-5fb6-4675-b9e4-fb958773140b.png">
@@ -54,6 +60,18 @@ python dirsearch.py -u "http://www.xxx.com/" -j yes -b yes
 
 <img width="779" alt="image" src="https://user-images.githubusercontent.com/56328995/236984950-f704665e-997e-4b0a-bd1c-a35b58cd43e1.png">
 
+#### 2023.5.11
+优化原版403bypasser，单独对某一指定路径进行403bypass
+
+昨天同事在使用时遇到问题：发现一个403页面，如果运行dirsearch则会目录扫描后再403bypass
+
+single_403pass.py 单独对一个url指定路径进行403bypass
+
+```
+python single_403pass.py -u "http://www.xxx.com/" -p "/index.php" # -p 指定路径
+```
+
+<img width="965" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/6698201c-734d-411a-92ba-379da6f4c5f0">
 
 ### 参考优秀项目
 
