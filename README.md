@@ -7,7 +7,8 @@
 
 dirsearch进行目录扫描--->将所有403状态的目录进行保存-->是否进行jsfind-->是(进行js爬取url和域名，将爬取到的url进行状态码识别如果是403状态则进行保存)-->进行403绕过
 
-<img width="872" alt="image" src="https://user-images.githubusercontent.com/56328995/236988448-ffc37c6c-3446-4c99-aedf-7e27a08f2dff.png">
+<img width="848" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/db2d9226-4b0f-4d37-9501-6c24eef8c7b2">
+
 
 ### 使用说明
 
