@@ -18,6 +18,7 @@
 #
 #  Author: Mauro Soria
 
+import time
 from colorama import init, Fore, Style
 
 from lib.pass403 import Arguments,Program
@@ -160,6 +161,19 @@ def jsfind():
         else:
             pass
 
+def ehole():
+    import ehole.ehole
+    from lib.core.options import parse_options
+    if (parse_options()['zwsb']) == None:
+        pass
+    else:
+        zwsb="".join(parse_options()['zwsb'])
+        if zwsb=='yes':
+            print(Fore.GREEN + Style.BRIGHT + "fingerprint identification!" + Style.RESET_ALL)
+            ehole.ehole.start_ehole()
+        else:
+            pass
+
 
 def hhh():
     open("403list.txt", 'w').close()
@@ -182,6 +196,7 @@ def main():
 
     run_bypass403()
 
+    ehole()
 
 
 
