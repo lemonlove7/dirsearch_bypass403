@@ -56,6 +56,14 @@ def parse_arguments():
         help="jsfind(yes/no)",
     )
     mandatory.add_option(
+        "-z",
+        "--zwsb",
+        action="append",
+        dest="zwsb",
+        metavar="",
+        help="fingerprint(yes/no)",
+    )
+    mandatory.add_option(
         "-l",
         "--url-file",
         action="store",
