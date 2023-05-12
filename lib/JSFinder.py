@@ -3,7 +3,7 @@
 # By Threezh1
 # https://threezh1.github.io/
 
-import requests, argparse, sys, re,csv
+import requests, argparse, sys, re,csv,os
 from requests.packages import urllib3
 from urllib.parse import urlparse
 from bs4 import BeautifulSoup
@@ -273,12 +273,10 @@ def giveresult(urls, domian):
 
 	GreateFile(sss,domian)
 
-	#print(Style.RESET_ALL)
 	subdomains = find_subdomain(urls, domian)
 	print(Fore.MAGENTA + Style.BRIGHT+"\nFind " + str(len(subdomains)) + " Subdomain:"+Style.RESET_ALL)
-	#print(Style.RESET_ALL)
+
+
 	for subdomain in subdomains:
 		content_subdomain += subdomain + "\n"
 		print(subdomain)
-
-
