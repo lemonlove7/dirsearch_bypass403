@@ -38,6 +38,12 @@ python dirsearch.py -u "http://www.xxx.com/" -j yes -b yes
 python single_403pass.py -u "http://www.xxx.com/" -p "/index.php" # -p 指定路径
 ```
 
+对扫描出来的目录进行指纹识别
+
+```
+python dirsearch.py -u "http://www.xxx.com/" -z yes
+```
+
 ### 使用截图
 
 <img width="1151" alt="image" src="https://user-images.githubusercontent.com/56328995/236655975-065acf6a-5fb6-4675-b9e4-fb958773140b.png">
