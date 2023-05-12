@@ -97,3 +97,5 @@ dirsearch：https://github.com/maurosoria/dirsearch
 403bypasser：https://github.com/yunemse48/403bypasser
 
 JSFinder：https://github.com/Threezh1/JSFinder
+
+EHole：https://github.com/EdgeSecurityTeam/EHole
