@@ -37,6 +37,7 @@ def start_ehole():
         pass
     win_mac=sys.platform
     if win_mac =="darwin":
+        os.system(f'cd {path_get}/ehole/ && chmod 777 ehole')
         os.system(f"{path_get}/ehole/ehole finger -l {path_get}/ehole/ehole.txt")
     if win_mac == "win32":
         pass
