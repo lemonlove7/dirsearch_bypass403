@@ -358,6 +358,7 @@ class Controller:
 
         output_file = options["output_file"]
 
+
         if options["autosave_report"] and not output_file:
             if len(self.targets) > 1:
                 directory_path = self.setup_batch_reports()
@@ -376,7 +377,12 @@ class Controller:
                 )
 
             output_file = FileUtils.get_abs_path((FileUtils.build_path(directory_path, filename)))
-
+            try:
+                with open('dir_file_path.txt','w') as f:
+                    f.write(output_file)
+                #print(output_file)
+            except:
+                pass
             if FileUtils.exists(output_file):
                 i = 2
                 while FileUtils.exists(f"{output_file}_{i}"):
