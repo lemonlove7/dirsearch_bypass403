@@ -40,4 +40,4 @@ def start_ehole():
         os.system(f'cd {path_get}/ehole/ && chmod 777 ehole')
         os.system(f"{path_get}/ehole/ehole finger -l {path_get}/ehole/ehole.txt")
     if win_mac == "win32":
-        pass
+        os.system(f'{path_get}/ehole/ehole.exe finger -l {path_get}/ehole/ehole.txt')
