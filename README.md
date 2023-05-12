@@ -74,6 +74,16 @@ python single_403pass.py -u "http://www.xxx.com/" -p "/index.php" # -p 指定路
 
 <img width="965" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/6698201c-734d-411a-92ba-379da6f4c5f0">
 
+#### 2023.5.12
+
+对目录进行指纹识别
+
+```
+python dirsearch.py -u "http://www.xxx.com/" -z yes
+```
+
+<img width="1046" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/2a6d5ad8-81cd-4408-b6c9-860d2e153ad9">
+
 ### 参考优秀项目
 
 dirsearch：https://github.com/maurosoria/dirsearch
