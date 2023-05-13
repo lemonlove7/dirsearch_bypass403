@@ -19,11 +19,13 @@ def start_ehole():
         except:
             pass
 
+
+    with open("bypass403_url.txt",'r') as domains:
+        domian=domains.read()
+    parsed_url = urlparse(domian)
+    domain1 = parsed_url.netloc
+    domain1 = domain1.replace('.', '_').replace(':', '_')
     try:
-        with open("bypass403_url.txt",'r') as domains:
-            domian=domains.read()
-        parsed_url = urlparse(domian)
-        domain1 = parsed_url.netloc
         file_csv = open("reports/" + domain1 + '.csv', 'r', encoding='GB18030')
         rows = csv.reader(file_csv)
         for row in rows:
@@ -37,7 +39,8 @@ def start_ehole():
         pass
     win_mac=sys.platform
     if win_mac =="darwin":
+        print(f"{path_get}/ehole/ehole finger -l {path_get}/ehole/ehole.txt -o {path_get}/reports/{domain1}.json")
         os.system(f'cd {path_get}/ehole/ && chmod 777 ehole')
-        os.system(f"{path_get}/ehole/ehole finger -l {path_get}/ehole/ehole.txt")
+        os.system(f"{path_get}/ehole/ehole finger -l {path_get}/ehole/ehole.txt -o {path_get}/reports/{domain1}.json")
     if win_mac == "win32":
-        os.system(f'{path_get}/ehole/ehole.exe finger -l {path_get}/ehole/ehole.txt')
+        os.system(f'{path_get}/ehole/ehole.exe finger -l {path_get}/ehole/ehole.txt -o {path_get}/reports/{domain1}.json')
