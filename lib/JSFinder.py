@@ -13,7 +13,6 @@ from concurrent.futures import ThreadPoolExecutor
 
 from colorama import init, Fore, Style
 
-import pandas as pd
 
 init()
 
