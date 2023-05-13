@@ -13,6 +13,7 @@ from concurrent.futures import ThreadPoolExecutor
 
 from colorama import init, Fore, Style
 
+import pandas as pd
 
 init()
 
@@ -263,6 +264,7 @@ def giveresult(urls, domian):
 	def GreateFile(sss,domian):
 		parsed_url = urlparse(domian)
 		domain1 = parsed_url.netloc
+		domain1=domain1.replace('.','_').replace(':','_')
 		with open("reports/"+domain1+'.csv', 'w', newline='', encoding='GB18030') as csvf:
 			fieldnames = ['URL','Code','title']
 			writer = csv.DictWriter(csvf, fieldnames=fieldnames)
@@ -272,10 +274,22 @@ def giveresult(urls, domian):
 
 	GreateFile(sss,domian)
 
+	#print(Style.RESET_ALL)
 	subdomains = find_subdomain(urls, domian)
 	print(Fore.MAGENTA + Style.BRIGHT+"\nFind " + str(len(subdomains)) + " Subdomain:"+Style.RESET_ALL)
+	#print(Style.RESET_ALL)
 
-
+	# 获取当前路径
+	#path_get = os.getcwd()
 	for subdomain in subdomains:
+		# http_url=subdomain
+		# if 'http' not in http_url:
+		# 	try:
+		# 		http_url='http://'+http_url
+		# 		requests.get(http_url,timeout=4)
+		# 	except:
+		# 		http_url='https://'+http_url
+		# with open(path_get+'/ehole/ehole.txt','a+') as f:
+		# 	f.write(http_url+'\n')
 		content_subdomain += subdomain + "\n"
 		print(subdomain)
