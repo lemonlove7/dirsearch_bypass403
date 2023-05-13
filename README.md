@@ -38,7 +38,7 @@ python dirsearch.py -u "http://www.xxx.com/" -j yes -b yes
 python single_403pass.py -u "http://www.xxx.com/" -p "/index.php" # -p 指定路径
 ```
 
-对扫描出来的目录进行指纹识别
+对扫描出来的目录进行指纹识别(结果会自动保存在reports目录下的.josn文件中)
 
 ```
 python dirsearch.py -u "http://www.xxx.com/" -z yes
@@ -82,7 +82,7 @@ python single_403pass.py -u "http://www.xxx.com/" -p "/index.php" # -p 指定路
 
 #### 2023.5.12
 
-对目录进行指纹识别
+对目录进行指纹识别(结果会自动保存在reports目录下的.josn文件中)
 
 ```
 python dirsearch.py -u "http://www.xxx.com/" -z yes
