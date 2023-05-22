@@ -90,6 +90,10 @@ python dirsearch.py -u "http://www.xxx.com/" -z yes
 
 <img width="1046" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/2a6d5ad8-81cd-4408-b6c9-860d2e153ad9">
 
+#### 2025.5.22
+
+对404状态码和0B数据进行过滤不进行指纹识别
+
 ### 参考优秀项目
 
 dirsearch：https://github.com/maurosoria/dirsearch
