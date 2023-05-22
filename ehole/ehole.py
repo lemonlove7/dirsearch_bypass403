@@ -11,13 +11,18 @@ def start_ehole():
         d1=d.readlines()
     for dd in d1:
         dd=dd.replace('\n','').replace('\r','')
-        reg = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
-        url=re.findall(reg,dd)
-        try:
-            with open(path_get+'/ehole/ehole.txt','a+') as ehole:
-                ehole.write(url[0]+'\n')
-        except:
+        if "404   " in dd:
             pass
+        elif ' 0B ' in dd:
+            pass
+        else:
+            reg = 'http[s]?://(?:[a-zA-Z]|[0-9]|[$-_@.&+]|[!*\(\),]|(?:%[0-9a-fA-F][0-9a-fA-F]))+'
+            url=re.findall(reg,dd)
+            try:
+                with open(path_get+'/ehole/ehole.txt','a+') as ehole:
+                    ehole.write(url[0]+'\n')
+            except:
+                pass
 
 
     with open("bypass403_url.txt",'r') as domains:
