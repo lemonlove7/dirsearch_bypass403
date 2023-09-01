@@ -87,7 +87,7 @@ class PathRepository():
 
         leadings = ["/%2e"]
 
-        trailings = ["/", "..;/", "/..;/", "%20", "%09", "%00",
+        trailings = ["/","/*/","/*", "..;/", "/..;/", "%20", "%09", "%00",
                      ".json", ".css", ".html", "?", "??", "???",
                      "?testparam", "#", "#test", "/."]
 
@@ -162,12 +162,15 @@ class Query():
         info = f"STATUS: {colour}{p.status_code}{reset}\tSIZE: {len(p.content)}"
         info_pure = f"STATUS: {p.status_code}\tSIZE: {len(p.content)}"
         remaining = line_width - len(target_address)
-
         if p.status_code !=403:
             print(target_address + " " * remaining + info+'\n',end='')
 
-
-        results.append(target_address + " " * remaining + info_pure)
+        if p.status_code==200:
+            res_h = requests.get(url=self.url, verify=False)
+            if len(p.content) != len(res_h.content):
+                results.append(target_address + " " * remaining + info_pure)
+        else:
+            results.append(target_address + " " * remaining + info_pure)
 
         self.writeToFile(results)
 
@@ -190,10 +193,12 @@ class Query():
             remaining = line_width - len(target_address)
             if r.status_code != 403:
                 print(target_address + " " * remaining + info+'\n',end='')
-
-
-
-            results.append(target_address + " " * remaining + info_pure)
+            if r.status_code==200:
+                res_h = requests.get(url=self.url, verify=False)
+                if len(r.content) != len(res_h.content):
+                    results.append(target_address + " " * remaining + info_pure)
+            else:
+                results.append(target_address + " " * remaining + info_pure)
 
         self.writeToFile(results)
         self.manipulateHeaders()
@@ -217,9 +222,12 @@ class Query():
             if r.status_code != 403:
                 print("\n" + target_address + " " * remaining + info+'\n',end='')
                 print(f"Header= {header}"+'\n',end='')
-
-
-            results.append("\n" + target_address + " " * remaining + info_pure+ f"---Header= {header}")
+            if r.status_code==200:
+                res_h=requests.get(url=self.url,verify=False)
+                if len(r.content) !=len(res_h.content):
+                    results.append("\n" + target_address + " " * remaining + info_pure+ f"---Header= {header}")
+            else:
+                results.append("\n" + target_address + " " * remaining + info_pure + f"---Header= {header}")
         self.writeToFile(results)
 
         results_2 = []
@@ -238,10 +246,12 @@ class Query():
             if r.status_code !=403:
                 print("\n" + target_address + " " * remaining + info+'\n',end='')
                 print(f"Header= {header}"+'\n',end='')
-
-
-
-            results_2.append("\n" + target_address + " " * remaining + info_pure + f"---Header= {header}")
+            if r.status_code ==200:
+                res_h=requests.get(url=self.url,verify=False)
+                if len(r.content) != len(res_h.content):
+                    results_2.append("\n" + target_address + " " * remaining + info_pure + f"---Header= {header}")
+            else:
+                results_2.append("\n" + target_address + " " * remaining + info_pure + f"---Header= {header}")
 
         self.writeToFile(results_2)
 
