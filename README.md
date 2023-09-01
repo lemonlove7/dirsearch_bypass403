@@ -90,9 +90,21 @@ python dirsearch.py -u "http://www.xxx.com/" -z yes
 
 <img width="1046" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/2a6d5ad8-81cd-4408-b6c9-860d2e153ad9">
 
-#### 2025.5.22
+#### 2023.5.22
 
 对404状态码和0B数据进行过滤不进行指纹识别
+
+#### 2023.9.1
+
+优化403bypass：与首页大小进行判断 如果size相同则表示绕过失败
+增加了一点403bypass绕过方式
+
+<img width="1245" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/b9075d68-85f7-439b-886d-3748978b9962">
+<img width="1052" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/933ac6e9-13a8-4a66-8ac2-52192c83b08a">
+<img width="1053" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/5b2185c6-6680-4225-ab64-de8cde667791">
+
+
+
 
 ### 参考优秀项目
 
