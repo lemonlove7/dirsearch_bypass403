@@ -96,7 +96,9 @@ python dirsearch.py -u "http://www.xxx.com/" -z yes
 
 #### 2023.9.1
 实验环境：https://portswigger.net/web-security/access-control/lab-url-based-access-control-can-be-circumvented
+
 优化403bypass：与首页大小进行判断 如果size相同则表示绕过失败
+
 增加了一点403bypass绕过方式
 
 <img width="1245" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/b9075d68-85f7-439b-886d-3748978b9962">
