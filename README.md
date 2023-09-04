@@ -9,6 +9,9 @@ dirsearch进行目录扫描--->将所有403状态的目录进行保存-->是否�
 
 <img width="848" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/db2d9226-4b0f-4d37-9501-6c24eef8c7b2">
 
+### 视频演示
+
+https://www.bilibili.com/video/BV1J14y1k7o3/?vd_source=dfcaf8e4dd4ff668e1c6f5d85cada840
 
 ### 使用说明
 
