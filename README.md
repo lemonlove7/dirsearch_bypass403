@@ -11,7 +11,7 @@ dirsearch进行目录扫描--->将所有403状态的目录进行保存-->是否�
 
 ### 视频演示
 
-https://www.bilibili.com/video/BV1J14y1k7o3/?vd_source=dfcaf8e4dd4ff668e1c6f5d85cada840
+https://www.bilibili.com/video/BV1J14y1k7o3/
 
 ### 使用说明
 
