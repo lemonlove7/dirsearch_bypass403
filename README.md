@@ -109,14 +109,16 @@ python dirsearch.py -u "http://www.xxx.com/" -z yes
 <img width="1053" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/5b2185c6-6680-4225-ab64-de8cde667791">
 
 
-
-
 ### 参考优秀项目
 
-dirsearch：https://github.com/maurosoria/dirsearch
+> dirsearch：https://github.com/maurosoria/dirsearch
 
-403bypasser：https://github.com/yunemse48/403bypasser
+> 403bypasser：https://github.com/yunemse48/403bypasser
 
-JSFinder：https://github.com/Threezh1/JSFinder
+> JSFinder：https://github.com/Threezh1/JSFinder
 
-EHole：https://github.com/EdgeSecurityTeam/EHole
+> EHole：https://github.com/EdgeSecurityTeam/EHole
+
+### Star历史
+
+![Star History Chart](https://api.star-history.com/svg?repos=lemonlove7/dirsearch_bypass403&type=Date)
