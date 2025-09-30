@@ -21,7 +21,7 @@
 import time
 from colorama import init, Fore, Style
 
-from lib.pass403 import Arguments,Program
+from lib.pass403_optimized import OptimizedArguments as Arguments, OptimizedProgram as Program
 from lib.qc import pass403_qc
 
 
@@ -74,16 +74,36 @@ if config.safe_getboolean("options", "check-dependencies", False):
 ##
 
 def bypass():
+    """优化的403bypass函数"""
     with open('bypass403_url.txt') as f:
-        bypass403_url=f.read()
+        bypass403_url = f.read().strip()
+    
+    # 收集所有需要处理的路径
+    paths_to_process = []
     while not q.empty():
-        path_403=q.get()
-        try:
-            argument = Arguments(bypass403_url, None, path_403, None)
-            program = Program(argument.return_urls(), argument.return_dirs())
-            program.initialise()
-        except:
-            pass
+        path_403 = q.get()
+        paths_to_process.append(path_403)
+    
+    if not paths_to_process:
+        return
+    
+    print(f"开始处理 {len(paths_to_process)} 个403路径")
+    
+    # 使用优化版本处理
+    try:
+        argument = Arguments(bypass403_url, None, None, None)
+        program = Program(argument.return_urls(), paths_to_process, max_workers=20)
+        program.initialise()
+    except Exception as e:
+        print(f"bypass处理出错: {e}")
+        # 如果处理失败，尝试逐个处理
+        for path_403 in paths_to_process:
+            try:
+                argument = Arguments(bypass403_url, None, path_403, None)
+                program = Program(argument.return_urls(), argument.return_dirs())
+                program.initialise()
+            except:
+                pass
 
 
 def run_bypass403():
@@ -100,9 +120,7 @@ def run_bypass403():
                 print(Fore.GREEN + Style.BRIGHT + 'No 403 status code present!'+Style.RESET_ALL)
             else:
                 print(Fore.GREEN + Style.BRIGHT+'Start 403bypass!'+Style.RESET_ALL)
-                # 根据系统CPU核心数动态调整线程数，默认最大40
-                cpu_count = multiprocessing.cpu_count()
-                thread_count = min(cpu_count * 5, 40)  # 线程数为CPU核心数的5倍，最大不超过40
+                print(Fore.CYAN + Style.BRIGHT + 'Using optimized 403bypass mode!'+Style.RESET_ALL)
                 
                 # 处理403list.txt路径
                 with open('403list.txt',) as f1:
@@ -111,23 +129,20 @@ def run_bypass403():
                     path_403=path_403.replace('\n','').replace('\r','')
                     q.put(path_403)
                 
-                thread_list = []
-                for i in range(thread_count):
-                    t = threading.Thread(target=bypass)
-                    thread_list.append(t)
-                for t in thread_list:
-                    t.setDaemon(True)
-                    t.start()
-                for t in thread_list:
-                    t.join()
+                # 使用优化的bypass函数
+                bypass()
 
-                # 处理jsfind403list.txt路径，使用相同的线程数
+                # 处理jsfind403list.txt路径，使用优化模式
                 if size_js > 0:
                     try:
                         with open('jsfind403list.txt') as js1:
                             jsf=js1.readlines()
                         
-                        def process_ff(ff):
+                        # 收集所有JS发现的URL和路径
+                        js_urls = []
+                        js_paths = []
+                        
+                        for ff in jsf:
                             ff = ff.replace('\n', '').replace('\r', '')
                             num_slashes = ff.count('/')
                             if num_slashes == 2:
@@ -137,15 +152,20 @@ def run_bypass403():
                             js_path = split_url[3]
                             if js_path == '':
                                 js_path = '/'
-                            argument = Arguments(js_url, None, js_path, None)
-                            program = Program(argument.return_urls(), argument.return_dirs())
+                            
+                            if js_url not in js_urls:
+                                js_urls.append(js_url)
+                            js_paths.append(js_path)
+                        
+                        # 使用优化模式处理JS发现的路径
+                        if js_urls and js_paths:
+                            print(f"开始处理 {len(js_paths)} 个JS发现的403路径")
+                            argument = Arguments(None, None, None, None)
+                            argument.urls = js_urls
+                            argument.dirs = js_paths
+                            program = Program(argument.return_urls(), argument.return_dirs(), max_workers=20)
                             program.initialise()
-
-                        # 设置ThreadPoolExecutor的最大工作线程数
-                        def js_403():
-                            with ThreadPoolExecutor(max_workers=thread_count) as executor:
-                                executor.map(process_ff, jsf)
-                        js_403()
+                            
                     except Exception as e:
                         print(f"Error processing jsfind403list.txt: {str(e)}")
                 
