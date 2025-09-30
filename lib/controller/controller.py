@@ -430,6 +430,14 @@ class Controller:
             )
 
         output.status_report(response, options["full_url"])
+        
+        # 如果状态码是403，写入到403list.txt文件
+        if response.status == 403:
+            try:
+                with open('403list.txt', 'a+') as f:
+                    f.write(response.full_path + '\n')
+            except Exception:
+                pass
 
         if response.status in options["recursion_status_codes"] and any(
             (
