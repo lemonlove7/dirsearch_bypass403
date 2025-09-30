@@ -135,6 +135,9 @@ python dirsearch.py -u "http://www.xxx.com/" -p yes
 python dirsearch.py -u "http://www.xxx.com/" --swagger yes
 ```
 
+<img width="1054" height="447" alt="image" src="https://github.com/user-attachments/assets/18617837-b0d9-44da-aced-c73e1e68ca94" />
+<img width="1401" height="560" alt="image" src="https://github.com/user-attachments/assets/e947b85e-b304-4d17-985e-97bfe9437aa2" />
+
 
 
 ### 参考优秀项目
