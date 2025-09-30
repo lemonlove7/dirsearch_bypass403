@@ -115,7 +115,7 @@ python dirsearch.py -u "http://www.xxx.com/" -z yes
 
 #### 2025.9.30
 
-1.403bypass检测优化，以及扫描速度提升,根据电脑自身cpu调整线程；
+1.403bypass检测优化，以及扫描速度提升,在绕403的时候如果还是403则不会显示
 
 2.修复若干问题：在设置代理时无法扫描：[#12](https://github.com/lemonlove7/dirsearch_bypass403/issues/12),最新版使用ehole功能时报错：[#11](https://github.com/lemonlove7/dirsearch_bypass403/issues/11),[#10](https://github.com/lemonlove7/dirsearch_bypass403/issues/10),逻辑问题：[#4](https://github.com/lemonlove7/dirsearch_bypass403/issues/4)
 
