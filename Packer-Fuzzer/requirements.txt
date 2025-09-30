@@ -1,0 +1,7 @@
+bs4
+urllib3
+requests
+docx2pdf
+docx2txt
+deno_vm
+python-docx==0.8.11

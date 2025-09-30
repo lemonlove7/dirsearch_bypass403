@@ -1,0 +1,4 @@
+# Dirsearch started Mon Sep 29 17:21:21 2025 as: dirsearch.py -u https://www.BLALBLA.com/ -j yes -b yes -z yes -t 10 -R 2 --user-agent Mozilla/5.0.... --delay 2 -o output.txt --format plain
+
+200   201B   https://www.BLALBLA.com/+CSCOT+/oem-customization?app=AnyConnect&type=oem&platform=..&resource-type=..&name=%2bCSCOE%2b/portal_inc.lua
+200   195B   https://www.BLALBLA.com/+CSCOT+/translation-table?type=mst&textdomain=/%2bCSCOE%2b/portal_inc.lua&default-language&lang=../
