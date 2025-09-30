@@ -108,6 +108,32 @@ python dirsearch.py -u "http://www.xxx.com/" -z yes
 <img width="1052" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/933ac6e9-13a8-4a66-8ac2-52192c83b08a">
 <img width="1053" alt="image" src="https://github.com/lemonlove7/dirsearch_bypass403/assets/56328995/5b2185c6-6680-4225-ab64-de8cde667791">
 
+#### 2025.9.30
+
+1.403bypass检测优化，以及扫描速度提升,根据电脑自身cpu调整线程；
+
+2.修复若干问题：[#12](https://github.com/lemonlove7/dirsearch_bypass403/issues/12),[11](https://github.com/lemonlove7/dirsearch_bypass403/issues/11),[10](https://github.com/lemonlove7/dirsearch_bypass403/issues/10),[4](https://github.com/lemonlove7/dirsearch_bypass403/issues/4)
+
+3.增加实用功能：
+
+3.1 融合Packer-Fuzzer[9](https://github.com/lemonlove7/dirsearch_bypass403/issues/9)
+
+如果提示模块已经安装还提示未安装，在/Packer-Fuzzer目录下将venv删除重新运行即可
+
+```
+python dirsearch.py -u "http://www.xxx.com/" -p yes
+```
+
+
+3.2 增加对swagger的未授权扫描
+
+如果在目录扫描中出现swagger的路径并且未200，size大小不为0，则在目录扫描后会进行swagger未授权测试
+
+```
+python dirsearch.py -u "http://www.xxx.com/" --swagger yes
+```
+
+
 
 ### 参考优秀项目
 
@@ -118,6 +144,8 @@ python dirsearch.py -u "http://www.xxx.com/" -z yes
 > JSFinder：https://github.com/Threezh1/JSFinder
 
 > EHole：https://github.com/EdgeSecurityTeam/EHole
+
+>Packer-Fuzzer:https://github.com/rtcatc/Packer-Fuzzer 
 
 ### Star历史
 
