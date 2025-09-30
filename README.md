@@ -112,17 +112,19 @@ python dirsearch.py -u "http://www.xxx.com/" -z yes
 
 1.403bypass检测优化，以及扫描速度提升,根据电脑自身cpu调整线程；
 
-2.修复若干问题：[#12](https://github.com/lemonlove7/dirsearch_bypass403/issues/12),[11](https://github.com/lemonlove7/dirsearch_bypass403/issues/11),[10](https://github.com/lemonlove7/dirsearch_bypass403/issues/10),[4](https://github.com/lemonlove7/dirsearch_bypass403/issues/4)
+2.修复若干问题：在设置代理时无法扫描：[#12](https://github.com/lemonlove7/dirsearch_bypass403/issues/12),最新版使用ehole功能时报错：[#11](https://github.com/lemonlove7/dirsearch_bypass403/issues/11),[#10](https://github.com/lemonlove7/dirsearch_bypass403/issues/10),逻辑问题：[#4](https://github.com/lemonlove7/dirsearch_bypass403/issues/4)
 
 3.增加实用功能：
 
-3.1 融合Packer-Fuzzer[9](https://github.com/lemonlove7/dirsearch_bypass403/issues/9)
+3.1 融合Packer-Fuzzer,可查看：[#9](https://github.com/lemonlove7/dirsearch_bypass403/issues/9)
 
 如果提示模块已经安装还提示未安装，在/Packer-Fuzzer目录下将venv删除重新运行即可
 
 ```
 python dirsearch.py -u "http://www.xxx.com/" -p yes
 ```
+
+
 
 
 3.2 增加对swagger的未授权扫描
