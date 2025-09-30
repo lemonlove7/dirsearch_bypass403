@@ -123,9 +123,9 @@ python dirsearch.py -u "http://www.xxx.com/" -z yes
 ```
 python dirsearch.py -u "http://www.xxx.com/" -p yes
 ```
+<img width="882" height="196" alt="image" src="https://github.com/user-attachments/assets/51853d09-7428-4349-98fb-2343ecfb8b1a" />
 
-
-
+<img width="1063" height="802" alt="image" src="https://github.com/user-attachments/assets/a48a78af-0022-45fc-a9a3-d829eb23c466" />
 
 3.2 增加对swagger的未授权扫描
 
