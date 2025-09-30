@@ -57,8 +57,8 @@ disable_warnings()
 # Use custom `socket.getaddrinfo` for `requests` which supports DNS caching
 socket.getaddrinfo = cached_getaddrinfo
 
-##清空文件内容
-open("403list.txt", 'w').close()
+
+# 初始化时不清空文件，由main函数中的hhh()统一处理
 
 
 class HTTPBearerAuth(AuthBase):
@@ -196,11 +196,6 @@ class Requester:
                     timeout=options["timeout"],
                     stream=True,
                 )
-                if response.status_code==403:
-                    if path=='':
-                        pass
-                    with open('403list.txt','a+') as f:
-                        f.write(path+'\n')
 
                 response = Response(response)
 
